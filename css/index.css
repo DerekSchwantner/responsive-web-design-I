@@ -77,7 +77,7 @@ header {
 }
 
 nav a {
-    color: black;
+    color: lightgray;
     text-align: center;
     justify-content: center;
     text-decoration: none;
@@ -90,33 +90,6 @@ nav a {
   nav a .logo {
     margin-left: 40px
   }
-  /* header .logo {
-    margin: 0 auto;
-  } */
-/* a {
-    float: left;
-    padding-top: 10px;
-    padding-right: 60px;
-  }
-  nav a {
-    color: grey;
-    text-align: center;
-    display: flex;
-    align-content: center;
-    text-decoration: none;
-    margin-bottom: 10px;
-  }
-  
-  .nav-container {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: row;
-    width: 95%;
-    margin-bottom: 40px;
-  } */
-  
-  
   
   .top-container {
     width: 90%;
@@ -132,7 +105,6 @@ nav a {
   .top-container .item {
     width: 40%;
     margin: 20px;
-    display: inline-block;
     align-items: center;
     justify-items: center;
     
@@ -222,33 +194,88 @@ nav a {
 
   @media(max-width: 800px) {
     .container {
-      width: 800px;
+      width: 100%;
     }
+    header {
+        width: 100%;
+    }
+    header nav {
+        width: 100%;
+        display: flex;
+      }
+      nav a {
+          
+          text-align: center;
+          justify-content: center;
+          text-decoration: none;
+          margin: 0 auto;
+          padding: 20px;
+          order: 1;
+        }
   
-    .container header nav {
-
+    a:last-child {
+        width: 100%;
+        order: -1;
     }
     .circle-img {
         display: none;
     }
-    .top-container button {
-    
-        position:relative;
-        left:32%;
-      }
+    .top-container .title-card {
+        width: 100%;
+    }
 
   }
 
   @media(max-width: 500px) {
     .container {
-      width: 500px;
+      width: 100%;
     }
-    .container header nav {
+    header {
+        width: 100%;
+    }
+    header nav {
+      width: 100%;
       display: flex;
       flex-direction: column;
     }
-  
-    .container header nav a {
-      margin-bottom: 20px;
+    nav a {
+        
+        text-align: center;
+        justify-content: center;
+        text-decoration: none;
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+        border-top: 1px solid lightgrey;
+        border-bottom: 1px solid lightgrey;
+        order: 1;
+      }
+    a:last-child {
+        order: -1;
+    }
+    .circle-img {
+        display: none;
+    }
+    .top-container .title-card {
+        width: 100%;
+    }
+    .top-container button {
+        align-content: center;
+        /* position:relative;
+        left:40%; */
+      }
+    .top-p-container .top-p {
+        width: 90%;
+        padding: 0 1%;
+        padding-bottom: 20px;  
+    }
+    .bottom-p-container {
+        flex-wrap: wrap;
+        
+    }
+    .bottom-p-container .lower-p {
+        width: 90%;
+        padding: 0 1%;
+        padding-bottom: 20px;  
     }
   }
