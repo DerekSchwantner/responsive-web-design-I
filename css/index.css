@@ -189,6 +189,7 @@ nav a {
   }
   .copywright {
     text-align: center;
+    margin-top: 25px;
   }
   
 
@@ -202,9 +203,9 @@ nav a {
     header nav {
         width: 100%;
         display: flex;
+        flex-wrap: wrap;
       }
       nav a {
-          
           text-align: center;
           justify-content: center;
           text-decoration: none;
@@ -214,8 +215,10 @@ nav a {
         }
   
     a:last-child {
-        width: 100%;
         order: -1;
+        display: block;
+        width: 100%
+
     }
     .circle-img {
         display: none;
@@ -246,12 +249,14 @@ nav a {
         width: 100%;
         margin: 0 auto;
         padding: 20px;
+        border-width: 100%;
         border-top: 1px solid lightgrey;
         border-bottom: 1px solid lightgrey;
         order: 1;
       }
     a:last-child {
         order: -1;
+        margin-top: 0px;
     }
     .circle-img {
         display: none;
@@ -261,8 +266,8 @@ nav a {
     }
     .top-container button {
         align-content: center;
-        /* position:relative;
-        left:40%; */
+        position:relative;
+        left:30%;
       }
     .top-p-container .top-p {
         width: 90%;
